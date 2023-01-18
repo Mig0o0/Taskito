@@ -14,3 +14,5 @@
 3. API
 4. Sanctum Authentication
 5. Roles & Permission ( Laratrust )
+6. Seeders & Factories
+7. Form Requests
