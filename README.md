@@ -16,3 +16,8 @@
 5. Roles & Permission ( Laratrust )
 6. Seeders & Factories
 7. Form Requests
+8. Events 
+
+## Technologies
+
+- Pusher Realtime Provider
