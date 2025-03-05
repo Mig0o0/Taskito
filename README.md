@@ -1,64 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Taskito
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Taskito is a simple yet powerful dashboard designed to manage an API exposed by a mobile application. The project aims to promote collaboration and productivity among team members, encouraging competition through task-based point systems. By breaking down larger projects into smaller, manageable tasks, Taskito helps teams work efficiently while staying motivated.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Task Management
+- **Task CRUD Operations:** Create, read, update, and delete tasks with ease.
+- **Nested Tasks:** Break down big projects into smaller, actionable tasks.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Task History
+- Track task completion history.
+- View details about who finished the task and when.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Task Hints and Points
+- **Hints System:** Each task can include hints. Opening a hint reduces the task's points by a specified amount set by the admin.
+- **Points System:** Tasks are assigned points to encourage competition and reward effort.
 
-## Learning Laravel
+### Task Assignment
+- Tasks are not pre-assigned. Instead, team members can claim tasks they want to work on by confirming their choice.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Real-Time Updates
+- **Pusher Integration:** Real-time updates for task status and team activity, ensuring everyone is always up-to-date.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Purpose
 
-## Laravel Sponsors
+This project is part of a graduation initiative to motivate my graduation team members to excel by introducing a competitive yet collaborative environment. It enables:
+1. Transparent task management and tracking.
+2. Breaking down complex projects into smaller, achievable goals.
+3. Encouraging self-driven task ownership.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Technologies Used
 
-### Premium Partners
+- **Backend:** Laravel (or your preferred backend framework)
+- **Frontend:** Tailwind CSS framework for styling
+- **Database:** MySQL for data storage
+- **Real-Time Updates:** Pusher for real-time notifications and updates
+- **API Integration:** Facilitates seamless interaction between the dashboard and the mobile application.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mig0o0/taskito.git
+   cd taskito
+
+2. Install dependencies:
+   ```bash
+   composer install
+   npm install
+
+3. Configure environment variables:
+   Copy the `.env.example` file to `.env` and update the required settings, including your Pusher credentials and database configuration.
+
+4. Run migrations:
+   ```bash
+   php artisan migrate
+
+5. Start the development server:
+   ```bash
+   php artisan serve
+   npm run dev
+
+6. Access the application:
+   Open your browser and navigate to `http://localhost:8000`.
+
+## Usage
+
+1. Log in as an admin to create and manage tasks.
+2. Team members can view available tasks and claim ones they wish to complete.
+3. Track the progress and history of tasks to ensure accountability and transparency.
+4. Enjoy real-time updates on task progress via Pusher.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+We welcome contributions to improve Taskito! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request detailing your changes.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License.
+
+---
+
+Taskito is more than just a task manager—it's a motivational tool for teams to achieve their goals together. Let's build great things!
